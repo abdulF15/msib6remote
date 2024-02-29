@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frame</title>
-  </head>
-
-  <frameset rows="20%, *,20%" cols="100%" frameborder="no">
-    <frame src="navbar.html" scrolling="no" />
-    <frameset cols="30%, *"> 
-      <frame src="latihan2.html">
-        <frame src="latihan1.html"scrolling="no" >
-    </frameset>
-    <frame src="footer.html"scrolling="no">
-  </frameset>
-</html>
+<frameset rows="10%,20%,*,10%" cols="100%" frameborder="no" >
+    <frame src="layout/header.html" scrolling="no">
+    <frame src="layout/navigasi.html" scrolling="no">
+        <frameset cols="25%, *, 25%" frameborder="0">
+            <frame src="layout/leftcolumn.html" name="leftcolumn" scrolling="no" >
+            <frame src="layout/home.html" name="maincolumn" scrolling="no" >
+            <frame src="layout/rightcolumn.html" name="rightcolumn" scrolling="no" >
+        </frameset>
+    <frame src="layout/footer.html" scrolling="no">
+</frameset>
